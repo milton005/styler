@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5c6bc0</color>
+    <color name="colorPrimaryDark">#673ab7</color>
+    <color name="colorAccent">#76389d</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#ffd600</color>
+    <color name="green">#64dd17</color>
+    <color name="grey_white">#89ffffff</color>
+    <color name="alice_blue">#d0f2f2fc</color>
+    <color name="lavender">#e7e5fa</color>
+    <color name="dark_lates_gray">#3c343f</color>
+    <color name="whitesmoke">#f3f3f3</color>
+<color name="silver">#c3c3c5</color>
+    <color name="green_button">#a1c627</color>
+    <color name="dark_slate_blue">#76389d</color>
+    <color name="thistle">#9896a4</color>
+    <color name="primary_dark">#C5C5C5</color>
+<color name="purple">#d7b4ea</color>
+    <color name="red_orange">#E45814</color>
+    <color name="menu_bg">#00477c</color>
+    <color name="menu_text_color">#8cb5d4</color>
+    <color name="popup_background">#002f54</color>
+    <color name="steel_blue">#4776bc</color>
+    <color name="dark_gray">#9896a4</color>
+    <color name="black_light">#201d24</color>
+    <color name="gainsboro">#dcdcdc</color>
+    <color name="transparent_black">#ca000000</color>
+    <color name="sentmessage_black">#3C343F</color>
+    <color name="white_transparent">#f6ffffff</color>
+    <color name="notification_color">#F7930A</color>
+
+
+</resources>

@@ -1,0 +1,2 @@
+include ':app',':library',':multipleimageselect',':viewpagerlibrary',':mobicommons', ':mobicomkit', ':mobicomkitui',':audiovideo'
+

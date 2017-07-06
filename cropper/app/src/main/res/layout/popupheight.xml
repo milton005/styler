@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/grey_white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:background="@drawable/popup_bg"
+
+        android:layout_height="400dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+
+
+
+
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/textHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="SELECT HEIGHT"
+                android:textColor="@color/black" />
+            <LinearLayout
+                android:layout_width="200dp"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/rectangle_2"
+
+
+                android:id="@+id/l1"
+                android:orientation="horizontal"
+
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:id="@+id/layout_kg"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+
+                    android:layout_height="30dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+
+                        android:textStyle="bold"
+
+
+                        android:textColor="@color/white"
+                        android:layout_height="match_parent"
+                        android:text="Meters"
+                        android:id="@+id/textkg" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/dark_lates_gray"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+
+                    android:id="@+id/layout_pounds"
+                    android:background="@color/white"
+                    android:layout_height="30dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+
+                        android:textStyle="bold"
+
+
+                        android:textColor="@color/black"
+                        android:layout_height="match_parent"
+                        android:text="Feet"
+                        android:id="@+id/textpounds" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/recyclerViewHeight"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_close_icon"
+            android:id="@+id/close_button"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/container_new"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <com.richie.styler.UTILS.CustomTabLayout
+        android:id="@+id/tabs"
+        style="@style/MyTabLayout"
+
+        app:tabMode="fixed"
+
+        app:tabGravity="fill"
+
+
+        android:background="@color/dark_gray"
+        app:tabIndicatorColor="@color/black_light"
+        app:tabIndicatorHeight="3dp"
+        app:tabSelectedTextColor="@color/black_light"
+        app:tabTextColor="@color/white"
+
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+    </com.richie.styler.UTILS.CustomTabLayout>
+    <LinearLayout
+        android:id="@+id/badgecontainer"
+
+        android:layout_width="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/notification_background"
+        android:gravity="center"
+        android:minWidth="16dp"
+        >
+
+        <TextView
+            android:id="@+id/badgetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tabs"
+        android:layout_height="match_parent">
+        <com.richie.styler.UTILS.NonSwipeableViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.richie.styler.UTILS.NonSwipeableViewPager>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

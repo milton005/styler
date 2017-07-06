@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_splash"
+        android:alpha=".2"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Under Construction"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_height="match_parent" />-->
+    <com.skyfishjy.library.RippleBackground
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content"
+        app:rb_color="#76389d"
+        app:rb_radius="32dp"
+        app:rb_strokeWidth="2dp"
+        app:rb_rippleAmount="3"
+
+        app:rb_duration="3000"
+        app:rb_scale="6">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="96dp"
+            android:src="@drawable/user_default"
+            android:layout_centerInParent="true"
+            android:layout_height="96dp"
+            android:id="@+id/centerImage"
+            app:civ_border_width="4dp"
+            app:civ_border_color="#76389d"/>
+        <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:id="@+id/centerImage"-->
+            <!--android:src="@drawable/user_default"-->
+            <!--app:civ_border_color="#76389d"-->
+            <!--app:civ_border_width="4dp"-->
+            <!--app:civ_shadow="true"-->
+            <!--app:civ_shadow_radius="10"-->
+            <!--app:civ_shadow_color="#76389d"/>-->
+    </com.skyfishjy.library.RippleBackground>
+        <!--<com.lorentzos.flingswipe.SwipeFlingAdapterView-->
+            <!--android:id="@+id/frame"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+
+            <!--app:rotation_degrees="15.5" />-->
+        <com.mindorks.placeholderview.SwipePlaceHolderView
+            android:id="@+id/swipeView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="100dp"
+            android:visibility="gone"
+            android:text="There's no new Stylers around you"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/dark_lates_gray"
+            android:id="@+id/nostylers"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

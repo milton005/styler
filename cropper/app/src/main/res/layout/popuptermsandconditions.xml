@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_splash"
+        android:alpha=".3"
+
+        android:layout_height="match_parent">
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:id="@+id/HeadlayoutTermsandConditions"
+    android:layout_height="wrap_content">
+   <TextView
+       android:layout_width="wrap_content"
+       android:text="TERMS AND CONDITIONS"
+       android:textColor="@color/black"
+       android:layout_marginTop="20dp"
+       android:id="@+id/text_head_terms"
+       android:textSize="20dp"
+       android:layout_centerInParent="true"
+       android:layout_height="wrap_content" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_above="@+id/layout_agree_disagree"
+        android:layout_below="@+id/HeadlayoutTermsandConditions"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:id="@+id/textterms"
+                   android:gravity="center"
+                   android:textSize="17dp"
+                   android:textColor="@color/black"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp"
+                   android:text="@string/lorens_ipsum"/>
+
+           </RelativeLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_agree_disagree"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:id="@+id/DisAgreeButton"
+                    android:background="@color/black"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:layout_height="match_parent"
+                        android:text="I DISAGREE"
+                        android:id="@+id/textView" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:id="@+id/AgreeButton"
+                    android:background="@color/white"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:background="@drawable/rectangle_1"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:layout_height="match_parent"
+                        android:text="I AGREE"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\STYLERAPP\\simple-crop-image-lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\main.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\STYLERAPP\\simple-crop-image-lib\\build\\intermediates\\bundles\\debug\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\STYLERAPP\\simple-crop-image-lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_custom_progress.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\STYLERAPP\\simple-crop-image-lib\\build\\intermediates\\bundles\\debug\\res\\layout\\view_custom_progress.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\STYLERAPP\\simple-crop-image-lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\cropimage.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\STYLERAPP\\simple-crop-image-lib\\build\\intermediates\\bundles\\debug\\res\\layout\\cropimage.xml"
+    }
+]

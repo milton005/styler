@@ -1,0 +1,143 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/dark_slate_blue</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="customimage" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">@color/black</item>
+    <item name="colorPrimaryDark">@color/primary_dark</item>
+    <item name="colorAccent">@color/dark_slate_blue</item>
+        <!--<item name="android:background">@color/whitesmoke</item>-->
+        <item name="android:windowBackground">@color/black</item>
+        <!--<item name="android:colorBackground">@color/whitesmoke</item>-->
+
+</style>
+    <style name="Applozic1Theme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!--To change the toolbar color change the colorPrimary  -->
+        <item name="colorPrimary">@color/dark_gray</item>
+
+        <!-- To change the status bar  color change the color of  colorPrimaryDark-->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated which is used to tint widgets -->
+        <item name="colorAccent">@color/dark_slate_blue</item>
+
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="MyTabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+    </style>
+    <style name="MyTabTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/tab_texsize</item>
+
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="Text">
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="Text2">
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+<style name="CustomAppbar" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">@color/grey_white</item>
+    <item name="colorPrimaryDark">@color/primary_dark</item>
+    <item name="colorAccent">@color/dark_slate_blue</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+</style>
+    <style name="MyCustomTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBarTheme</item>
+    </style>
+
+    <style name="MyActionBarTheme" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.FullScren" parent="AppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="MyTitleTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <!--<item name="android:textAppearance">@styl</item>-->
+    </style>
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/dark_slate_blue</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorAlertDialogListItem">@color/white</item>
+        <item name="android:background">@color/thistle</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:windowTitleStyle">@style/MyTitleTextStyle</item>
+    </style>
+
+    <style name="spinner_style" >
+    <item name="android:background">@drawable/spinner_bg</item>
+
+    <!--<item name="android:paddingLeft">8dp</item>-->
+    <!--<item name="android:paddingTop">5dp</item>-->
+    <item name="android:paddingBottom">5dp</item>
+    </style>
+    <style name="Theme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="transparent" parent="Theme.Transparent">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:titleTextStyle">@android:color/white</item>
+    </style>
+    <style name="myStyle" parent="StyledToast">
+        <item name="android:layout_gravity">center_horizontal|center_vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="MyTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+    </style>
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/thistle</item>
+        <item name="android:bottomDark">@color/thistle</item>
+        <item name="android:bottomMedium">@color/thistle</item>
+        <item name="android:centerBright">@color/thistle</item>
+        <item name="android:centerDark">@color/thistle</item>
+        <item name="android:centerMedium">@color/thistle</item>
+        <item name="android:fullBright">@color/thistle</item>
+        <item name="android:fullDark">@color/thistle</item>
+        <item name="android:topBright">@color/thistle</item>
+        <item name="android:topDark">@color/thistle</item>
+    </style>
+    <style name="StyledToast">
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item> only bold!
+        <!--<item name="android:fontFamily"></item> For custom fonts just add the path -> fonts/myfont.ttf-->
+        <item name="android:colorBackground">@color/thistle</item>
+
+        <item name="android:radius">3dp</item>  radius for corners of the toast shape
+        <item name="android:alpha">.7</item>   value between 0-255 where 255 is full solid
+        <!--<item name="android:icon">/</item>  drawable id of the icon. R.drawable.xx-->
+
+    </style>
+
+</resources>

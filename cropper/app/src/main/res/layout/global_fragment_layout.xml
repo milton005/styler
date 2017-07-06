@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@drawable/bg_splash"-->
+        <!--android:alpha=".3"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</RelativeLayout>-->
+<android.support.v4.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:id="@+id/swiperefreshlayout"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rllayout1"
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/textViewrecycle1"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@+id/textViewrecycle1"
+                    android:layout_width="match_parent"
+                    android:id="@+id/recyclerView1"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/recyclerView1"
+                    android:id="@+id/relativeLayoutmoreonline"
+
+                    android:layout_height="30dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/more_layout"
+                        android:background="@drawable/rectangle_2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/textViewmore1"
+                            android:textColor="@color/black"
+                            android:textAllCaps="true"
+                            android:text="More Stylers Online"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/textViewmore1"
+                            android:src="@drawable/arrow"
+                            android:layout_height="14dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rllayout2"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_below="@+id/rllayout1"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/textViewrecycle2"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@+id/textViewrecycle2"
+                    android:layout_width="match_parent"
+                    android:id="@+id/recyclerView2"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/recyclerView2"
+                    android:id="@+id/more_layout2"
+
+                    android:layout_height="30dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="20dp"
+
+                        android:background="@drawable/rectangle_2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/black"
+                            android:id="@+id/textViewmore2"
+                            android:textAllCaps="true"
+
+                            android:text="More new stylers"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"
+                          android:layout_toRightOf="@+id/textViewmore2"
+                            android:src="@drawable/arrow"
+                            android:layout_height="14dp" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rllayout3"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/rllayout2"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:id="@+id/textViewrecycle3"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@+id/textViewrecycle3"
+                    android:layout_width="match_parent"
+                    android:id="@+id/recyclerView3"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/more_layout3"
+                    android:layout_below="@+id/recyclerView3"
+
+                    android:layout_height="30dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="20dp"
+
+
+                        android:background="@drawable/rectangle_2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/black"
+                            android:textAllCaps="true"
+                            android:id="@+id/textViewmore3"
+                            android:text="More Most liked stylers"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/textViewmore3"
+                            android:src="@drawable/arrow"
+                            android:layout_height="14dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rllayout4"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/rllayout3"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:id="@+id/textViewrecycle4"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.RecyclerView
+                    android:layout_below="@+id/textViewrecycle4"
+                    android:layout_width="match_parent"
+                    android:id="@+id/recyclerView4"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/recyclerView4"
+                    android:id="@+id/more_layout4"
+
+                    android:layout_height="30dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="20dp"
+
+                        android:background="@drawable/rectangle_2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/black"
+                            android:id="@+id/textViewmore4"
+                            android:textAllCaps="true"
+                            android:text="More Most liked stylers in last hour"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/textViewmore4"
+                            android:src="@drawable/arrow"
+                            android:layout_height="14dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>
