@@ -202,6 +202,7 @@ public class ConversationUIService {
                             }
                         });
                 getConversationFragment().loadFile(selectedFileUri, file);
+                getConversationFragment().sendMessage("",Message.ContentType.ATTACHMENT.getValue());
                 Log.i(TAG, "File uri: " + selectedFileUri);
             }
 

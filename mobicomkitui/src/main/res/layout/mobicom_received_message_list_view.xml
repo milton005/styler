@@ -103,7 +103,7 @@
                 android:padding="10dp"
                 android:text=""
                 android:textColor="@color/message_text_color"
-                android:textSize="16sp" />
+                android:textSize="18sp" />
         </LinearLayout>
 
         <TextView

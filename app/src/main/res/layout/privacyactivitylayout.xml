@@ -51,6 +51,7 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:layout_width="match_parent"
+                    android:id="@+id/textcontent"
                     android:text="@string/lorens_ipsum"
                     android:layout_height="wrap_content" />
             </RelativeLayout>

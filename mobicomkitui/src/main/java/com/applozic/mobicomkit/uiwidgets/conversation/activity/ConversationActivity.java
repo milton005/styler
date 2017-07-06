@@ -253,6 +253,7 @@ public class ConversationActivity extends AppCompatActivity implements MessageCo
         subscribeIntent.putExtra(ApplozicMqttIntentService.SUBSCRIBE, true);
         startService(subscribeIntent);
 
+
         if (!Utils.isInternetAvailable(getApplicationContext())) {
             String errorMessage = getResources().getString(R.string.internet_connection_not_available);
             showErrorMessageView(errorMessage);

@@ -12,7 +12,8 @@ import java.util.Map;
  * Created by devashish on 8/21/2015.
  */
 public class ApplozicSetting {
-
+    public static final  String IS_IMAGE_CLICKED="IS_IMAGE_CLICKED";
+    public static final String IS_LOCATION_CLICKED="IS_LOCATION_CLICKED";
     public static final String CUSTOM_MESSAGE_BACKGROUND_COLOR = "CUSTOM_MESSAGE_BACKGROUND_COLOR";
     protected static final String TYPING_TEXT_COLOR = "TYPING_TEXT_COLOR";
     private static final String START_NEW_FLOATING_ACTION_BUTTON_DISPLAY = "SETTING_START_NEW_FLOATING_ACTION_BUTTON_DISPLAY";
@@ -99,7 +100,24 @@ public class ApplozicSetting {
         sharedPreferences.edit().putInt(key, color).commit();
         return this;
     }
-
+    public ApplozicSetting set_isimagebuttonclicked(boolean value)
+    {
+        sharedPreferences.edit().putBoolean(IS_IMAGE_CLICKED,value).apply();
+        return this;
+    }
+    public boolean get_isimagebuttonclicked()
+    {
+        return sharedPreferences.getBoolean(IS_IMAGE_CLICKED,false);
+    }
+    public ApplozicSetting set_is_locationbuttonclicked(boolean value)
+    {
+       sharedPreferences.edit().putBoolean(IS_LOCATION_CLICKED,value).apply();
+        return this;
+    }
+    public boolean get_is_location_clicked()
+    {
+        return sharedPreferences.getBoolean(IS_LOCATION_CLICKED,false);
+    }
     public int getColor(String key) {
         return sharedPreferences.getInt(key, R.color.applozic_theme_color_primary);
     }
@@ -204,7 +222,7 @@ public class ApplozicSetting {
     }
 
     public int getSentContactMessageTextColor() {
-        return sharedPreferences.getInt(SENT_CONTACT_MESSAGE_TEXT_COLOR, R.color.white);
+        return sharedPreferences.getInt(SENT_CONTACT_MESSAGE_TEXT_COLOR, R.color.black);
     }
 
     public ApplozicSetting setSentContactMessageTextColor(int color) {

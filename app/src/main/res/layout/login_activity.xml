@@ -134,6 +134,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:text="LOG IN NOW"
+                        android:id="@+id/logintext"
                         android:gravity="center"
                         android:textColor="@color/white"
                         android:textSize="17dp"

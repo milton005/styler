@@ -1,7 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:background="@color/purple"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
 
-</LinearLayout>
+    android:layout_height="match_parent">
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@drawable/bg_splash"-->
+        <!--android:alpha=".3"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:id="@+id/textWhoStarted"
+                android:textColor="@color/black"
+                android:text="Who Started Conversation?"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:weightSum="2"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textWhoStarted"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/rectangle_2"
+
+
+                android:id="@+id/l1"
+                android:orientation="horizontal"
+
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:id="@+id/layout_me"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+
+                    android:layout_height="30dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+
+                        android:textStyle="bold"
+
+
+                        android:textColor="@color/white"
+                        android:layout_height="match_parent"
+                        android:text="Me"
+                        android:textAllCaps="true"
+                        android:id="@+id/textme" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/dark_lates_gray"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+
+                    android:id="@+id/layout_someone"
+                    android:background="@color/white"
+                    android:layout_height="30dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+
+
+                        android:textColor="@color/black"
+                        android:layout_height="match_parent"
+                        android:text="Someone Else"
+                        android:id="@+id/textsomeone" />
+                </LinearLayout>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_below="@id/l1"
+                android:id="@+id/recyclerView"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:visibility="gone"
+               android:text="You have no conversations"
+                android:id="@+id/notext"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

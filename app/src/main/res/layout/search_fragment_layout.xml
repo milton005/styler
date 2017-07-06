@@ -3,13 +3,13 @@
     android:orientation="vertical" android:layout_width="match_parent"
 android:id="@+id/searchlayout"
     android:layout_height="match_parent">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:background="@drawable/bg_splash"
-        android:alpha=".3"
-        android:layout_height="match_parent">
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@drawable/bg_splash"-->
+        <!--android:alpha=".3"-->
+        <!--android:layout_height="match_parent">-->
 
-    </RelativeLayout>
+    <!--</RelativeLayout>-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -32,7 +32,7 @@ android:id="@+id/searchlayout"
                     android:layout_width="match_parent"
                     android:text="Search by Styler tribe:"
                     android:textColor="@color/black"
-                    android:textSize="15dp"
+                    android:textSize="17dp"
                     android:id="@+id/searchTextStylertribe"
                     android:layout_height="wrap_content"
                     />
@@ -96,7 +96,7 @@ android:id="@+id/searchlayout"
                     android:layout_width="match_parent"
                     android:text="Search by location:"
                     android:textColor="@color/black"
-                    android:textSize="15dp"
+                    android:textSize="17dp"
                     android:id="@+id/searchTextlocation"
                     android:layout_height="wrap_content"
                     />
@@ -145,7 +145,7 @@ android:id="@+id/searchlayout"
                     android:layout_width="match_parent"
                     android:text="Search by profile name:"
                     android:textColor="@color/black"
-                    android:textSize="15dp"
+                    android:textSize="17dp"
                     android:id="@+id/searchTextProfileName"
                     android:layout_height="wrap_content"
                     />
@@ -223,7 +223,7 @@ android:id="@+id/searchlayout"
                             android:layout_height="wrap_content"
                             android:text="From:"
                             android:id="@+id/searchtextfrom"
-                            android:textSize="15dp"
+                            android:textSize="17dp"
                             android:textColor="@color/black"
                             />
                         <RelativeLayout
@@ -281,14 +281,15 @@ android:id="@+id/searchlayout"
                         android:orientation="vertical"
                         android:layout_marginLeft="5dp"
                         android:layout_height="match_parent">
+
                         <TextView
+                            android:id="@+id/searchtextto"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/searchtextto"
                             android:text="To:"
-                            android:textSize="15dp"
                             android:textColor="@color/black"
-                            />
+                            android:textSize="17dp" />
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_weight="1"
@@ -352,7 +353,7 @@ android:id="@+id/searchlayout"
                     android:layout_width="match_parent"
                     android:text="Search by brand/designer:"
                     android:textColor="@color/black"
-                    android:textSize="15dp"
+                    android:textSize="17dp"
                     android:id="@+id/searchTextbrand"
                     android:layout_height="wrap_content"
                     />
@@ -404,6 +405,7 @@ android:id="@+id/searchlayout"
                         android:layout_width="match_parent"
                         android:gravity="center"
                         android:text="Search Now"
+                        android:id="@+id/searchnowtext"
                         android:textAllCaps="true"
                         android:textSize="17sp"
                         android:textColor="@color/white"

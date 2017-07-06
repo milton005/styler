@@ -726,7 +726,7 @@ public class DetailedConversationAdapter extends ArrayAdapter<Message> {
             Button addContactButton = (Button) mainContactShareLayout.findViewById(R.id.contact_share_add_btn);
             shareContactName.setText(data.getName());
 
-            int resId = message.isTypeOutbox() ? Color.parseColor(alCustomizationSettings.getSentContactMessageTextColor()) : Color.parseColor(alCustomizationSettings.getReceivedContactMessageTextColor());
+            int resId = message.isTypeOutbox() ? Color.parseColor("#000000") : Color.parseColor(alCustomizationSettings.getReceivedContactMessageTextColor());
             shareContactName.setTextColor(resId);
             shareContactNo.setTextColor(resId);
             shareEmailContact.setTextColor(resId);
@@ -849,9 +849,31 @@ public class DetailedConversationAdapter extends ArrayAdapter<Message> {
         } else if (message.getFileMetas() != null) {
             fileName = message.getFileMetas().getName();
         }
+        if (fileName.endsWith((".m4a")))
+        {
+            attachedFile.setText("Audio clip");
+        }else if (fileName.endsWith(".mp3"))
+        {
+            attachedFile.setText("Audio clip");
+        }
+        else if (fileName.endsWith(".aac"))
+        {
+            attachedFile.setText("Audio clip");
+        }
+        else if (fileName.endsWith(".wav"))
+        {
+            attachedFile.setText("Audio clip");
+        }
+        else if (fileName.endsWith(".ogg"))
+        {
+            attachedFile.setText("Audio clip");
+        }
+        else {
+            attachedFile.setText("Attachment");
+        }
         attachedFile.setTextColor(message.isTypeOutbox() ?
                 Color.parseColor(alCustomizationSettings.getSentMessageTextColor()) : Color.parseColor(alCustomizationSettings.getReceivedMessageTextColor()));
-        attachedFile.setText(fileName);
+
         attachedFile.setVisibility(View.VISIBLE);
         attachedFile.setOnClickListener(new View.OnClickListener() {
             @Override

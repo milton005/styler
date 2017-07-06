@@ -3,13 +3,13 @@
     android:orientation="vertical" android:layout_width="match_parent"
 
     android:layout_height="match_parent">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:background="@drawable/bg_splash"
-        android:alpha=".3"
-        android:layout_height="match_parent">
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@drawable/bg_splash"-->
+        <!--android:alpha=".3"-->
+        <!--android:layout_height="match_parent">-->
 
-    </RelativeLayout>
+    <!--</RelativeLayout>-->
     <Button
         android:layout_width="wrap_content"
         android:text="back"

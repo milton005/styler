@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "822577491883",
-    "firebase_url": "https://styler-160705.firebaseio.com",
-    "project_id": "styler-160705",
-    "storage_bucket": "styler-160705.appspot.com"
+    "project_number": "990190862675",
+    "firebase_url": "https://styler-58ef2.firebaseio.com",
+    "project_id": "styler-58ef2",
+    "storage_bucket": "styler-58ef2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:822577491883:android:d505d89f0c691a8f",
+        "mobilesdk_app_id": "1:990190862675:android:6e8b952d69cc4db4",
         "android_client_info": {
-          "package_name": "com.mindbees.stylerapp"
+          "package_name": "com.richie.styler"
         }
       },
       "oauth_client": [
         {
-          "client_id": "822577491883-o97nd3ogem9q6slbgesresorcjh59u5c.apps.googleusercontent.com",
+          "client_id": "990190862675-4947dv3c4kdd6bo8ifas19g98afkat4r.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.mindbees.stylerapp",
+            "package_name": "com.richie.styler",
             "certificate_hash": "cf3655937b24766fd12a7fd5514ac89dce070922"
           }
         },
         {
-          "client_id": "822577491883-9a3ga25vm7p93ed2jaa30hib40jjnsl7.apps.googleusercontent.com",
+          "client_id": "990190862675-3au9uq7p8cupsuphol0rnafco9ft94oo.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDbWOvU0Hw2KHsXliqLg2nkoIk5xzKUs1c"
+          "current_key": "AIzaSyDMjtV3sEbeyvr8Sm3W2t9KxqQcD5df7L4"
         }
       ],
       "services": {
@@ -40,7 +40,15 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "822577491883-9a3ga25vm7p93ed2jaa30hib40jjnsl7.apps.googleusercontent.com",
+              "client_id": "990190862675-fakijl4stclhbprfhr0hcbi2dp4gt1m0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.richie.styler",
+                "app_store_id": "1252909085"
+              }
+            },
+            {
+              "client_id": "990190862675-3au9uq7p8cupsuphol0rnafco9ft94oo.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

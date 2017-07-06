@@ -3,11 +3,10 @@
   "sentMessageBackgroundColor": "#FFFFFFFF",
   "receivedMessageBackgroundColor": "#FF3C343F",
   "sendButtonBackgroundColor": "#FF3C343F",
-  "attachmentIconsBackgroundColor": "#FF03A9F4",
+  "attachmentIconsBackgroundColor": "#FF76389d",
   "channelCustomMessageBgColor": "#cccccc",
-
-  "sentContactMessageTextColor:": "#FFFFFFFF",
-  "receivedContactMessageTextColor": "#000000",
+  "sentContactMessageTextColor:": "#FF000000",
+  "receivedContactMessageTextColor": "#FFFFFF",
   "sentMessageTextColor": "#FF3C343F",
   "receivedMessageTextColor": "#FFFFFFFF",
   "messageEditTextTextColor": "#000000",
@@ -25,7 +24,7 @@
   "channelCustomMessageBorderColor": "#cccccc",
 
   "audioPermissionNotFoundMsg": "",
-  "noConversationLabel": "You have no conversations",
+  "noConversationLabel": " ",
   "noSearchFoundForChatMessages": "No conversation found",
   "totalRegisteredUserToFetch": 100,
   "maxAttachmentAllowed": 10,

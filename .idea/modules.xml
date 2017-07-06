@@ -10,7 +10,6 @@
       <module fileurl="file://$PROJECT_DIR$/mobicomkitui/mobicomkitui.iml" filepath="$PROJECT_DIR$/mobicomkitui/mobicomkitui.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobicommons/mobicommons.iml" filepath="$PROJECT_DIR$/mobicommons/mobicommons.iml" />
       <module fileurl="file://$PROJECT_DIR$/multipleimageselect/multipleimageselect.iml" filepath="$PROJECT_DIR$/multipleimageselect/multipleimageselect.iml" />
-      <module fileurl="file://$PROJECT_DIR$/simple-crop-image-lib/simple-crop-image-lib.iml" filepath="$PROJECT_DIR$/simple-crop-image-lib/simple-crop-image-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewpagerlibrary/viewpagerlibrary.iml" filepath="$PROJECT_DIR$/viewpagerlibrary/viewpagerlibrary.iml" />
     </modules>
   </component>

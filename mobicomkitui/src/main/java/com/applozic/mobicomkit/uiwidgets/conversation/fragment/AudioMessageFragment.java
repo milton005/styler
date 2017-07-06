@@ -142,13 +142,21 @@ public class AudioMessageFragment extends DialogFragment {
 
             @Override
             public void onTick(long millisUntilFinished) {
-
                 cnt++;
                 long millis = cnt;
-                int seconds = (int) (millis / 60);
+                int seconds = (int) (cnt / 60);
                 int minutes = seconds / 60;
                 seconds = seconds % 60;
-                txtcount.setText(String.format("%d:%02d:%02d", minutes, seconds, millis));
+                if (millis>=60)
+                {
+                    millis=cnt%60;
+                }
+//                cnt++;
+//                long millis = cnt;
+//                int seconds = (int) (millis / 60);
+//                int minutes = seconds / 60;
+//                seconds = seconds % 60;
+                txtcount.setText(String.format("%02d:%02d", seconds, millis));
 
             }
 

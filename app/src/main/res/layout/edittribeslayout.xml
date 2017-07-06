@@ -118,6 +118,7 @@
                             android:layout_width="match_parent"
                             android:layout_below="@+id/recyclerView"
                             android:weightSum="3"
+                            android:id="@+id/linearOtherlayout"
 
                             android:layout_weight="6"
                             android:orientation="horizontal"
@@ -207,7 +208,7 @@
                         android:layout_height="match_parent">
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_marginBottom="20dp"
+                            android:layout_marginBottom="40dp"
                             android:layout_marginTop="10dp"
 
                             android:id="@+id/image_enlarged"
@@ -221,6 +222,15 @@
 
                                 android:layout_alignParentBottom="true"
                                 android:layout_height="100dp">
+                                <LinearLayout
+                                    android:id="@+id/viewPagerCountDots"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginTop="48dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:text="@string/app_name"

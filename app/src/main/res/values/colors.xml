@@ -29,6 +29,7 @@
     <color name="transparent_black">#ca000000</color>
     <color name="sentmessage_black">#3C343F</color>
     <color name="white_transparent">#f6ffffff</color>
+    <color name="notification_color">#F7930A</color>
 
 
 </resources>

@@ -194,6 +194,7 @@
 
                                 <ImageView
                                     android:layout_width="20dp"
+                                    android:id="@+id/imageuparrow"
 
 
                                     android:layout_height="20dp"
@@ -206,7 +207,7 @@
                                     android:layout_centerVertical="true"
 
                                     android:gravity="start"
-                                    android:text="Megan Fisher"
+
                                     android:textColor="@color/white"
                                     android:textSize="18dp" />
 
@@ -237,7 +238,7 @@
                                         android:paddingLeft="15dp"
                                         android:paddingRight="15dp"
                                         android:paddingTop="5dp"
-                                        android:text="22 years old"
+
                                         android:textColor="@color/white"
                                         android:textSize="@dimen/text15" />
 
@@ -360,7 +361,7 @@
                                 android:layout_marginTop="3dp"
                                 android:textColor="@color/white"
 
-                                android:textSize="@dimen/text13" />
+                                android:textSize="@dimen/text14" />
 
                         </LinearLayout>
 
@@ -395,7 +396,7 @@
                                 android:layout_marginTop="3dp"
                                 android:textColor="@color/white"
 
-                                android:textSize="@dimen/text13" />
+                                android:textSize="@dimen/text14" />
 
                         </LinearLayout>
 
@@ -430,7 +431,7 @@
                                 android:layout_marginTop="3dp"
                                 android:textColor="@color/white"
 
-                                android:textSize="@dimen/text13" />
+                                android:textSize="@dimen/text14" />
 
                         </LinearLayout>
 
@@ -465,7 +466,7 @@
                                 android:layout_marginTop="3dp"
                                 android:textColor="@color/white"
 
-                                android:textSize="@dimen/text13" />
+                                android:textSize="@dimen/text14" />
 
                         </LinearLayout>
 
@@ -535,10 +536,41 @@
                                 android:layout_marginTop="3dp"
                                 android:textColor="@color/white"
 
-                                android:textSize="@dimen/text13" />
+                                android:textSize="@dimen/text14" />
 
                         </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/layout_otherinterests"
+                            android:orientation="vertical">
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
 
+                                android:background="@color/white"></View>
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/textotherinterestshead"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/oter_interests"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text15" />
+
+                            <TextView
+                                android:id="@+id/textotherinterests"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginTop="3dp"
+                                android:textColor="@color/white"
+
+                                android:textSize="@dimen/text14" />
+
+                        </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -713,6 +745,27 @@
 
 
                 android:src="@drawable/hearts1" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layoutliked"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+
+            android:layout_below="@+id/layoutlocation"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="270dp"
+
+            android:background="@drawable/round_circle_greywhite">
+
+            <ImageView
+                android:id="@+id/imageliked"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_liked" />
 
         </RelativeLayout>
     </FrameLayout>

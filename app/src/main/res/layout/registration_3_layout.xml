@@ -259,7 +259,91 @@ android:id="@+id/registrationlayout_3"
 
                 </RelativeLayout>
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/layout4"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/layout3"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="@string/oter_interests"
+                    android:id="@+id/textotherinterests"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:id="@+id/text_never_go_ext"-->
+                    <!--android:textStyle="italic"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/view_rectangle_border"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_margin="1dp"
+                        android:id="@+id/errorotherinterest"
+                        android:visibility="gone"
 
+
+                        android:background="@color/thistle"
+                        android:layout_height="60dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:textSize="11dp"
+                            android:text=" Please enter other interests "
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:paddingRight="10dp"
+                            android:src="@drawable/alert"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="30dp" />
+                    </RelativeLayout>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/editotherinterest"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPersonName|textCapSentences"
+                        android:textColor="@color/black"
+                        android:minHeight="60dp"
+                        android:paddingLeft="10dp"
+                        android:hint="@string/other_interest_hint"
+                        android:layout_height="wrap_content" />
+                    <!--<com.mindbees.stylerapp.UTILS.MultiSpinner-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_margin="5sp"-->
+                    <!--android:id="@+id/spinnevergo"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--</com.mindbees.stylerapp.UTILS.MultiSpinner>-->
+
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/nextButton"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/layout4"
+
+                android:layout_alignParentBottom="true"
+                android:layout_height="80dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/register_next"
+                    android:src="@drawable/ic_register_next"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
             <!--<LinearLayout-->
                 <!--android:layout_width="match_parent"-->
                 <!--android:background="@color/white"-->
@@ -293,18 +377,5 @@ android:id="@+id/registrationlayout_3"
     </RelativeLayout>
     </RelativeLayout>
     </ScrollView>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:id="@+id/nextButton"
 
-        android:layout_alignParentBottom="true"
-        android:layout_height="80dp">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_centerInParent="true"
-            android:id="@+id/register_next"
-            android:src="@drawable/ic_register_next"
-            android:layout_height="wrap_content" />
-
-    </RelativeLayout>
 </RelativeLayout>

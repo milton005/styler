@@ -30,9 +30,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/scroll"
-        android:layout_below="@+id/logolayout"
         android:isScrollContainer="false"
-        android:layout_above="@+id/nextButton1"
+        android:layout_below="@+id/logolayout"
         android:layout_alignParentStart="true">
 <RelativeLayout
     android:layout_width="match_parent"
@@ -603,29 +602,6 @@
                         android:textColor="@color/black"
                         android:textColorHint="@color/black" />
                 </RelativeLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -900,7 +876,7 @@
                                 android:gravity="center_vertical"
                                 android:button="@drawable/check_box_selector"
                                 android:id="@+id/checkboxPrivacy"
-                                android:layout_height="match_parent" />
+                                android:layout_height="wrap_content" />
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_gravity="center"
@@ -923,7 +899,28 @@
 
                                     android:layout_height="match_parent" />
                             </LinearLayout>
+
                         </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="50dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:src="@drawable/asterisk"
+                                android:layout_height="wrap_content"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:textColor="@color/black"
+                                android:id="@+id/you_can_always"
+                                android:layout_centerVertical="true"
+                                android:text="You can always change the above details in profile editor"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
 
 
                     </LinearLayout>
@@ -954,8 +951,11 @@
         android:layout_width="match_parent"
 
         android:layout_height="150dp">
+
+
         <ImageView
-            android:layout_width="100dp"
+            android:layout_width="120dp"
+
 
             android:id="@+id/user_profilepic"
             android:padding="3dip"
@@ -963,8 +963,31 @@
 
             android:scaleType="centerCrop"
             android:layout_centerHorizontal="true"
-            android:layout_height="100dp" />
+            android:layout_height="120dp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:src="@color/black"
+            android:id="@+id/shadowimage"
+            android:padding="3dip"
+            android:alpha=".3"
+            android:layout_centerHorizontal="true"
+            android:layout_height="120dp" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
 
+
+            android:text="Tap to Set Profile picture "
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:textSize="15dp"
+            style="@style/Text2"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/textTapHere"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+           />
             <ImageView
                 android:id="@+id/imageEdit"
                 android:layout_centerHorizontal="true"

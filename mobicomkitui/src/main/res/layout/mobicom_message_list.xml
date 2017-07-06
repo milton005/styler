@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/layout1"
     android:background="@drawable/bg"
     android:visibility="visible">
 
@@ -53,7 +54,7 @@
             android:layout_centerInParent="true"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="@string/no_conversation"
+
             android:visibility="gone" />
 
         <ImageButton
@@ -219,11 +220,29 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+
+
         android:background="@color/white"
 
-        android:orientation="horizontal"
-        android:visibility="gone">
 
+        android:orientation="horizontal"
+        android:visibility="visible">
+        <ImageButton
+            android:id="@+id/attach_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="bottom|left"
+            android:background="@color/apploizc_transparent_color"
+            android:gravity="center"
+
+            android:layout_marginLeft="8dp"
+
+
+
+            android:scaleType="center"
+            android:src="@drawable/ic_plus"
+            android:visibility="visible" />
 
         <LinearLayout
             android:id="@+id/edit_text_linear_layout"
@@ -231,11 +250,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="50dp"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="100dp"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
-            android:background="@drawable/rectangle_1"
+            android:background="@drawable/field"
             android:orientation="horizontal">
 
             <ImageButton
@@ -249,19 +269,7 @@
                 android:scaleType="center"
                 android:src="@drawable/mobicom_emoticons_icon" />
 
-            <ImageButton
-                android:id="@+id/attach_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|left"
-                android:background="@color/apploizc_transparent_color"
-                android:gravity="center"
-                android:minHeight="48dp"
-                android:paddingLeft="5dp"
-                android:paddingRight="10dp"
-                android:scaleType="center"
-                android:src="@drawable/applozic_ic_action_attachment"
-                android:visibility="visible" />
+
 
             <!--
                     <EditText
@@ -277,6 +285,7 @@
             -->
             <EditText
                 android:id="@+id/conversation_message"
+                android:paddingLeft="10dp"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="8"
@@ -287,7 +296,7 @@
                 android:hint="@string/enter_message_hint"
 
                 android:maxLines="6"
-                android:minHeight="50dp"
+                android:minHeight="40dp"
                 android:minLines="2"
                 android:textColor="@color/black"
                 android:textColorHint="@color/edittext_hint_color"
@@ -301,21 +310,163 @@
         <!--emojicon:emojiconSize="28sp"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"/>-->
+        <TextView
+            android:id="@+id/txtcount"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+
+            android:phoneNumber="false"
+            android:text="00:00:00"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
         <ImageView
             android:id="@+id/conversation_send"
             android:layout_width="60dp"
+
             android:layout_height="48dp"
             android:layout_alignParentRight="true"
             android:layout_gravity="bottom|right"
             android:layout_centerVertical="true"
 
             android:clickable="true"
-            android:layout_marginRight="20dp"
+
+            android:layout_marginRight="30dp"
             android:gravity="center"
             android:scaleType="center"
             android:src="@drawable/send"
+            android:visibility="gone" />
+        <LinearLayout
+            android:layout_width="60dp"
+            android:id="@+id/layout_image_audio_record"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:visibility="visible"
+            android:gravity="center"
+
+
+            android:layout_gravity="bottom|right"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+            <ImageView
+
+
+                android:layout_width="25dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/imagebutton"
+                android:layout_height="30dp"
+
+
+
+                android:clickable="true"
+
+
+                android:gravity="center"
+
+                android:src="@drawable/ic_camera"
+                android:visibility="visible" />
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/imagedot"
+
+
+                android:layout_width="20dp"
+                android:src="@drawable/ic_menu"
+                android:layout_height="20dp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:id="@+id/timerValuelayout"
+
+            android:layout_height="56dp">
+            <com.applozic.mobicomkit.uiwidgets.Retrofit.FrameLayoutFixed
+                android:id="@+id/record_panel"
+
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="2dp"
+
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+id/slideText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/slidearrow" />
+
+                    <TextView
+                        android:id="@+id/slideToCancelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:textColor="#999999"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffffff"
+                    android:orientation="horizontal"
+                    android:paddingLeft="13dp" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/rec" />
+
+                    <TextView
+                        android:id="@+id/recording_time_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:text="00:00"
+                        android:textColor="#4d4c4b"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </com.applozic.mobicomkit.uiwidgets.Retrofit.FrameLayoutFixed>
+            <ImageView
+            android:id="@+id/audio_button"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+
+            android:clickable="true"
+
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+
+            android:src="@drawable/ic_audio"
             android:visibility="visible" />
+        </RelativeLayout>
     </RelativeLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

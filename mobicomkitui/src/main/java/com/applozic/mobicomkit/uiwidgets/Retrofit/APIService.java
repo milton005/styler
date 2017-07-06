@@ -1,5 +1,7 @@
 package com.applozic.mobicomkit.uiwidgets.Retrofit;
 
+import com.applozic.mobicomkit.uiwidgets.Retrofit.Checkin.ModelCheckinnn;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -94,4 +96,6 @@ public interface APIService {
     @FormUrlEncoded
     @POST(Urls.CHAT_HELPER)
     Call<ResponseBody>chathelper(@FieldMap HashMap<String,String>params);
+    @GET(Urls.GETVENUES)
+    Call<ModelCheckinnn>getvenues(@QueryMap HashMap<String,String>params);//foursquare api calling
 }

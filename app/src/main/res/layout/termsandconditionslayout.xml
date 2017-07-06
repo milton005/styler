@@ -30,7 +30,7 @@
                 android:layout_centerVertical="true"
                 android:gravity="center"
                 android:textColor="@color/black"
-                android:id="@+id/text_head_privacy"
+                android:id="@+id/text_head_termsandconditions"
                 android:textSize="17dp"
                 android:text="Terms and Conditions "
 
@@ -51,6 +51,7 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:layout_width="match_parent"
+                    android:id="@id/textcontent"
                     android:text="@string/lorens_ipsum"
                     android:layout_height="wrap_content" />
             </RelativeLayout>

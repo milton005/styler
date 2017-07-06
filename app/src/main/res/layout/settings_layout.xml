@@ -48,6 +48,7 @@
     <com.github.florent37.parallax.ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:overScrollMode="always"
         android:layout_below="@+id/layout1"
         >
 
@@ -62,24 +63,26 @@
             android:layout_width="match_parent"
             android:id="@+id/layout2"
 
-            android:layout_height="300dp">
+            android:layout_height="210dp">
             <ImageView
-                android:layout_width="200dp"
+                android:layout_width="160dp"
+                android:layout_marginTop="5dp"
                 android:tag="parallax=0.5"
                 android:id="@+id/profileimage"
                 android:src="@drawable/cmra1"
 
-                android:layout_centerInParent="true"
-                android:layout_height="300dp" />
+                android:layout_centerHorizontal="true"
+                android:layout_height="160dp" />
             <TextView
                 android:layout_width="match_parent"
-                android:tag="parallax=0.3"
+                android:tag="parallax=0.1"
                 android:gravity="center"
                 android:textSize="22dp"
+                style="@style/Text2"
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:id="@+id/imagetext"
-                android:layout_marginTop="250dp"
+                android:layout_marginTop="170dp"
                 android:layout_centerHorizontal="true"
                 android:layout_height="wrap_content" />
 
@@ -225,6 +228,9 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:gravity="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?android:attr/selectableItemBackground"
                         android:layout_marginTop="10dp"
                         android:layout_height="40dp">
                         <TextView
@@ -255,6 +261,9 @@
                         android:gravity="bottom"
                         android:id="@+id/password_layout"
                         android:orientation="vertical"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?android:attr/selectableItemBackground"
                         android:layout_height="wrap_content">
                         <TextView
                             android:layout_width="match_parent"
@@ -280,6 +289,9 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:gravity="bottom"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?android:attr/selectableItemBackground"
                         android:layout_height="40dp">
                         <TextView
                             android:layout_width="match_parent"
@@ -331,6 +343,9 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:gravity="bottom"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?android:attr/selectableItemBackground"
                         android:layout_height="40dp">
 
                         <TextView
@@ -355,6 +370,9 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:gravity="bottom"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?android:attr/selectableItemBackground"
                         android:layout_height="40dp">
 
                         <TextView
@@ -362,6 +380,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
+
                             android:drawableLeft="@drawable/ic_termsconditions"
                             android:gravity="center_vertical"
                             android:text="Terms and Conditions"
@@ -380,6 +399,9 @@
                         android:layout_width="match_parent"
                         android:gravity="bottom"
                         android:id="@+id/logout"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?android:attr/selectableItemBackground"
                         android:layout_height="40dp">
 
                         <TextView

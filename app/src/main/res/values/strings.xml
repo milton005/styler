@@ -1,22 +1,26 @@
 <resources>
-    <string name="app_name">Styler</string>
+    <string name="app_name">Styler - The Fashion Dating App</string>
     <string name="default_media_location_folder">Styler</string>
     <string name="fb_connect">CONTINUE WITH <b>FACEBOOK</b></string>
     <string name="facebook_app_id">371596349889004</string>
     <string name="desigener_brands">My favorite designers/brands are:</string>
-    <string name="privacypolicy"><u>I accept terms and conditions</u></string>
+    <string name="privacypolicy"><u>I accept Terms and Conditions</u></string>
     <string name="style_icons">My style icons are:</string>
     <string name="weight_hint"><font size="12">Weight (optional):</font></string>
     <string name="height_hint"><font size="12">Height (optional):</font></string>
-    <string name="select_tribe">Please select your Styler tribes:</string>
+    <string name="select_tribe">Please select your Styler Tribes:</string>
+    <string name="select_tribes_ilike">Styler Tribes i am looking for:</string>
     <string name="dlg_choose_image_from">Select image from…</string>
+    <string name="oter_interests">My other interests:</string>
+    <string name="other_interest_hint"><font  size="13">Hiking, I love pets, etc</font></string>
     <string name="never_go">I would never go out with someone who wears:</string>
     <string name="lorens_ipsum">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc</string>
     <string name="please_wait">Please wait...</string>
     <string name="loremipsumlite">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum></string>
-    <string name="brandhint"><font size ="13">Alexander McQueen, Alessandro Michele etc.</font></string>
+    <string name="brandhint"><font size ="13"> Alexander McQueen, Zara, Givenchy, Top Shop, Alessandro Michele, H&amp;M, etc.</font></string>
     <string name="style_hint"><font size="13">Rihanna, Justin Timberlake, etc.</font></string>
     <string name="nevergo_hint"><font size="13">Flip Flops, Flats, Bow Ties, etc.</font></string>
     <string name="goofflinehead"><b>Go Offline</b></string>
-    <string name="going_offline">Are you sure you wish to go offline?\nWhile offline, your profile will not appear in the Nearby or Global grids.\nYour profile will also not appear in search results</string>
+    <string name="going_offline">Are you sure you want to go offline?\nWhile offline, your profile will not appear in the Nearby or Global grids.\nYour profile will also not appear in search results</string>
+    <string name="going_online">Are you sure you want to go onine?\nWhile online, your profile will  appear in the Nearby or Global grids.\nYour profile will also  appear in search results</string>
 </resources>
